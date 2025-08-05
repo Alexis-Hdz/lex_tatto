@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lex_tatto17 | Tatuador</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 20px 0;
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    p {
+      margin: 10px 20px;
+      font-size: 1.2em;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #d81b60;
+    }
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 10px;
+    }
+    .galeria img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 2px solid #444;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      padding: 20px;
+      background-color: #1f1f1f;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lex_tatto17</h1>
+    <p>Artista del tatuaje especializado en diseños únicos, realismo y tinta con estilo.</p>
+    <a class="btn" href="https://www.instagram.com/lex_tatto17" target="_blank">Ver mi Instagram</a>
+  </header>
+
+<section class="galeria">
+  <img src="img/majin_vegeta.jpg" alt="Tatuaje Majin Vegeta">
+  <img src="img/bb_tatto.jpg" alt="Tatuaje BB">
+  <img src="img/dedos_tatto.jpg" alt="Tatuaje en los dedos">
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Lex_tatto17. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Mensaje motivacional aleatorio
+    const mensajes = [
+      "Tu piel, mi lienzo. ¡Gracias por confiar en mi arte!",
+      "Cada tatuaje tiene una historia. ¿Cuál es la tuya?",
+      "El arte vive en la piel para siempre."
+    ];
+
+    const mensaje = mensajes[Math.floor(Math.random() * mensajes.length)];
+    const p = document.createElement("p");
+    p.textContent = mensaje;
+    document.body.insertBefore(p, document.querySelector(".galeria"));
+  </script>
+
+</body>
+</html>
+
